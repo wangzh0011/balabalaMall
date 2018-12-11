@@ -2,13 +2,14 @@ package com.taotao.service;
 
 import com.taotao.mapper.TbItemMapper;
 import com.taotao.pojo.TbItem;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 @Service
 public class ItemServiceImpl implements ItemService {
 
-    @Autowired
+    @Resource
     private TbItemMapper tbItemMapper;
 
     @Override
