@@ -1,7 +1,7 @@
 package com.taotao.controller;
 
 import com.taotao.pojo.TbItem;
-import com.taotao.service.ItemService;
+import com.taotao.impl.ItemService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
