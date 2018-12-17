@@ -1,2 +1,3 @@
 com\taotao\controller\ItemController.class
 com\taotao\App.class
+com\taotao\controller\LoginController.class
