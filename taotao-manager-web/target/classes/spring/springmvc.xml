@@ -17,9 +17,14 @@
         <property name="suffix" value=".jsp" />
     </bean>
 
+    <!--配置资源映射-->
+    <mvc:resources mapping="/css/**" location="/css/"/>
+    <mvc:resources mapping="/js/**" location="/js/"/>
+
     <!-- 引用dubbo服务 -->
     <dubbo:application name="taotao-manager-web"/>
     <dubbo:registry protocol="zookeeper" address="47.107.131.132:2181"/>
     <dubbo:reference interface="com.taotao.impl.ItemService" id="itemService" />
+    <dubbo:reference interface="com.taotao.impl.ItemCatService" id="itemCatService"/>
 
 </beans>
